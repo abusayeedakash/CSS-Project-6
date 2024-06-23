@@ -1,0 +1,62 @@
+/* ?Global Css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --menutxt: "Poppins", sans-serif;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+}
+
+.navig {
+  height: 1fr;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px;
+  font-family: var(--menutxt);
+  font-weight: 600;
+}
+ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.847);
+  transition: 0.3s;
+}
+
+ul li a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: rgba(0, 0, 255, 0.885);
+  margin-right: auto;
+  transition: 0.5s;
+}
+ul li a:hover::after {
+  width: 100%;
+  color: rgba(0, 0, 255, 0.756);
+}
+
+.btn {
+  background-color: rgba(0, 0, 255, 0.841);
+  color: rgb(255, 255, 255);
+  padding: 6px 20px;
+  font-family: var(--menutxt);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+}
